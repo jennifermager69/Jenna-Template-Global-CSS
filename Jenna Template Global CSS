@@ -1,0 +1,97 @@
+:root {
+  --white: #FFFFFF;
+  --blush: #FBF7F5;
+  --orange: #E45E4C;
+  --lightblue: #D2E5E7;
+  --darkblue: #6189A9;
+  --superdarkblue: #2B3E4F;
+  --serif: lavigne-display;
+  --sanserif: brandon-grotesque;
+  --script: "miss-fitzpatrick", sans-serif;
+}
+
+/* CSS FOR TABLET AND MOBILE */
+@mobile:  ~"only screen and (max-width: 640px)";
+@tablet:  ~"only screen and (min-width: 641px) and (max-width: 949px)";
+
+//links
+//remove lines from header links
+header a {
+background-image: none !important;
+}
+
+//remove links from everything else
+.sqs-block-html a, .image-title-wrapper a, .image-subtitle-wrapper a, .sqs-image-caption a, .image-caption a, .sqs-block-newsletter a, .list-item-content__description a, .list-section-title a, .sqs-block-html a, .image-title-wrapper a, .image-subtitle-wrapper a, .sqs-image-caption a, .image-caption a, .sqs-block-newsletter a, .list-item-content__description a, .list-section-title a {
+  text-decoration-line: unset;}
+
+//footer links
+.sqsrte-large a {
+  color: var(--darkblue);
+}
+
+//header
+//change active page navigation
+.header-nav-item--active a { 
+background-image: none!important; 
+font-weight: 600 !important; 
+color: var(--orange) !important;  
+}
+
+// SPLIT NAVIGATION//do not change
+.header-nav {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    margin-top: 20px!important;
+    margin-left: 0px!important;
+}
+
+.header-nav-item:nth-of-type(3) {
+    margin-right: 340px!important;
+}
+
+.header-title-logo a {
+    z-index: 1000;
+    position: relative;
+}
+
+.header-display-desktop .header-title {
+    flex: 0 0 40% !important;
+    z-index: 999999999;
+}
+
+//typography - Paragraph 1
+.sqsrte-large {
+  letter-spacing: .1em;
+  font-size: 1.5rem !important;
+  line-height: 1.4em !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
+//heading 4 - change to script
+h4 {
+font-family:  var(--script) !important;
+  letter-spacing: .02em;
+  font-size: 2.2rem !important;
+  font-weight: 100;
+}
+
+//line thickness
+.sqs-block-horizontalrule hr {
+height: 2px;
+}
+
+//button hover - do not change
+.sqs-button-element--secondary {
+  transition: 1s border-color ease, 1s color ease, 1s background-color ease !important;
+}
+
+.sqs-button-element--secondary:hover {
+    color: var(--white) !important;
+    background-color: var(--superdarkblue) !important;
+    border-color: var(--superdarkblue) !important;
+}
+
+//change social icons color
+.sqs-use--icon {     fill: var(--darkblue) !important; } .sqs-svg-icon--wrapper:hover {   .sqs-use--icon {     fill: var(--orange) !important; }}
